@@ -74,7 +74,7 @@ public class ImageGalleryActivity extends AppCompatActivity {
                 String viewedImage = imageUrls.get(position);
                 if (unseenImages.contains(viewedImage)) {
                     unseenImages.remove(viewedImage);
-                    newImagesCount = unseenImages.size(); // Update the count
+                    newImagesCount = unseenImages.size(); // Update the count by 1
                     lastViewedPosition = position;
                     Log.d("ImageGalleryActivity", "Unseen images remaining: " + newImagesCount);
                 }
