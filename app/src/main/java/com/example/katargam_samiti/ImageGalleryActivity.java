@@ -65,7 +65,7 @@ public class ImageGalleryActivity extends AppCompatActivity {
         // Real-time listener for new image additions
         listenForNewImages();
 
-        // Listen for page changes to track when user views a new image
+        // Listen for page changes to track when user views a new images
         viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
