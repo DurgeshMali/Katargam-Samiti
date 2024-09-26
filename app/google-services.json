@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "896028013101",
+    "project_id": "katargam-samiti",
+    "storage_bucket": "katargam-samiti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896028013101:android:a0ee65a5b06b06d2f0bea4",
+        "android_client_info": {
+          "package_name": "com.example.katargam_samiti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0BNX-JNL1OARHvEdWc1XhVyOHNlOj-O8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

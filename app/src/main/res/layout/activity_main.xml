@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#F5F5F5">
+
+        <!-- Title Text for App -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Your Photo"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:paddingBottom="24dp"/>
+
+        <!-- User Input Field for Name -->
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            android:textColorHint="#757575"
+            android:elevation="4dp"
+            android:backgroundTint="#FFFFFF"/>
+
+        <!-- Button to Open Camera -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Picture"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp"
+            android:textAllCaps="false"/>
+
+        <!-- ImageView to Display Captured Image -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:background="#E0E0E0"
+            android:contentDescription="Captured Image Preview"
+            android:elevation="4dp"/>
+
+        <!-- Confirmation Button for Upload -->
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Upload"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="false"
+            android:visibility="gone"/> <!-- Initially hidden until image is taken -->
+
+        <!-- Cancel Button for Cancelling Upload -->
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="false"
+            android:visibility="gone"/> <!-- Initially hidden until image is taken -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
